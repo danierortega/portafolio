@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    background-color: #f4ebeb;
+    /* cursor: pointer; */
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+}
+
+section.menu{
+    position:sticky;
+    top: 0;
+    z-index:1;
+    width: 100%;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #030303;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+
+.logo {
+    max-width: 6rem;
+}
+
+.menu-list li a:hover {
+    color: aquamarine;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.abrir-menu, .cerrar-menu{
+    display: none;
+}
+
+/* tittle */
+.title{
+    padding: 10rem;
+}
+
+.profile{
+    max-width: 200px;
+    border: solid 4px black;
+}
+
+.title-div{
+    display: flex;
+    padding-top: 20px;
+}
+
+.title-container{
+    margin: auto;
+    padding-left: 50px;
+    font-size: 1.3rem;
+}
+
+/* sobre mi */
+section.about{
+    padding: 10rem;
+    line-height : 25px;
+    background-color: #d0c4c4;
+}
+
+
+.about-container{
+    width: 940px;
+    font-size: 1.2rem;
+}
+
+.about-content{
+    width:300px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.sobreMi{
+    font-size: 1.7rem;
+}
+
+.signature{
+   width: 300px;
+   height: 400px;
+}
+
+/* skills */
+section.skills{
+    padding: 10rem;
+    font-size: 20px;
+
+}
+
+.section-title{
+    font-size: 1.7rem;
+}
+
+.skills-line{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.skills-box{
+    padding-top: 20px;
+}
+
+/* formacion */
+
+#formacion{
+    padding: 10rem;
+    margin: 0 auto;
+    position: relative; 
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#formacion::before {    
+    content: "";
+    background-image: url(assets/28-07-2017.-Panteón.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+}
+
+.text-center{
+    margin-top: 0 auto;
+    color: #030303;
+    text-align: center;
+    position: relative;
+}
+
+.cursor-pointer{
+    font-size: 3rem;
+    color: #030303;
+    position: relative;
+}
+
+.cursor-pointer:hover{
+    color: aquamarine;
+}
+
+/* experiencia */
+section.experience{
+    padding: 10rem;
+}
+
+@media screen and (max-width: 550px){
+    /* header */
+    .logo{
+        max-width: 7rem;
+    }
+
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 1.9rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: aquamarine;
+    }
+
+    .cerrar-menu{
+        color: white;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(99, 195, 163);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    /* tittle */
+
+
+}
+
+
+
