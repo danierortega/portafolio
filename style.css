@@ -10,9 +10,7 @@ body{
     background: #f4ebeb;
 }
 
-ol,
-ul,
-li {
+ol,ul,li {
     list-style: none;
 }
 
@@ -26,7 +24,6 @@ section.menu{
     top: 0;
     z-index:1;
     width: 100%;
-    
 
     display: flex;
     align-items: center;
@@ -258,6 +255,41 @@ section.info-contacto{
     font-size: 20px;
 }
 
+@media screen and (max-width: 820px){
+    /* title */
+    .card{
+        margin: 10px;
+        width: 700px;
+        height: 200px;
+        border-radius: 7px;
+    }
+
+    .content{
+        display: block;
+    }
+
+    .sobreMi{
+        margin: 0 auto;
+    }
+    .about-container{
+        width: 660px;
+    }
+
+    footer{
+        width: 800px;
+    }
+    .footer{
+        padding: 0;
+        width: 700px;
+        height: 200px;
+    }
+
+    #contacto{
+        top: center;
+        left: auto;
+    }
+}
+
 @media screen and (max-width: 550px){
     /* header */
     .logo{
@@ -267,7 +299,7 @@ section.info-contacto{
     .abrir-menu, .cerrar-menu{
         display: block;
         border: 0;
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         background-color: transparent;
         cursor: pointer;
     }
@@ -308,8 +340,122 @@ section.info-contacto{
     }
 
     /* tittle */
+    .title{
+        padding: 1rem;
+    }
+    
+    .card{
+        margin: 20px auto;
+        width: 200px;
+        height: 300px;
+        border-radius: 7px;
+    }
+    
+    .content h2, a{
+        margin: 0 0;
+    }
+    
+    
+    .title-div{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
+    
+    .title-container{
+        margin: auto;
+        padding-left: 50px;
+        font-size: 1rem;
+    }
 
+    /* sobre mi */
+    section.about{
+        padding: 0;
+        margin-top: auto;
+        line-height : 20px;
+    }
+    
+    
+    .about-container{
+        align-items: center;
+        width: 370px;
+        font-size: 1.2rem;
+    }
+    
+    .about-content{
+        width:300px;
+        padding: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .sobreMi{
+        font-size: 1.7rem;
+    }
+    
+    .signature{
+       width: 350px;
+       height: 350px;
+       left: auto;
+    }
 
+    /* skills */
+    section.skills{
+        padding: 1rem;
+        font-size: 20px;
+    
+    }
+    
+    .section-title{
+        font-size: 1.4rem;
+    }
+    
+    .skills-box{
+        padding-top: 10px;
+    }
+
+    /* experiencia */
+    section.experience{
+        padding: 2rem;
+    }
+
+    /* footer */
+    footer{
+        padding: 1rem;
+        width: 380px;
+        height: 280px;
+    }
+    section.footer{
+        width: auto;
+    }
+
+    .rodape{
+        width: 300px;
+    }
+    
+    .rodape-container{
+        width: 300px;
+        padding: 1rem;
+        display:flex;
+        justify-content: space-around;
+    }
+    
+    .rodape-item img{
+        width: 50px;
+    }
+    
+    section.info-contacto{
+        width: 250px;
+        position: relative;
+        top: center;
+        left:auto;
+    }
+    .cursor-pointer{
+        font-size: 30px;
+    }
+    
+    .titulo-final{
+        font-size: 15px;
+    }
 }
 
 
