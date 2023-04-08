@@ -7,10 +7,7 @@
 body{
     font-family: 'Roboto Mono', monospace;
     box-sizing: border-box;
-    background-color: #f4ebeb;
-    /* cursor: pointer; */
-    margin: 0;
-    padding: 0;
+    background: #f4ebeb;
 }
 
 ol,
@@ -38,7 +35,6 @@ section.menu{
     background-color: #030303;
     box-sizing: border-box;
     transition: 0.5s;
-
 }
 
 .logo {
@@ -60,13 +56,45 @@ section.menu{
 }
 
 /* tittle */
+
 .title{
-    padding: 10rem;
+    padding: 7rem;
 }
 
-.profile{
-    max-width: 200px;
-    border: solid 4px black;
+.card{
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.content h2, a{
+    color: rgba(255, 255, 255, .8);
+    margin: 10px 0;
+}
+
+.card:hover .content{
+    opacity: 1;
+}
+
+.card a:hover{
+    color: aquamarine;
 }
 
 .title-div{
@@ -130,7 +158,6 @@ section.skills{
 }
 
 /* formacion */
-
 #formacion{
     padding: 10rem;
     margin: 0 auto;
@@ -176,6 +203,47 @@ section.skills{
 /* experiencia */
 section.experience{
     padding: 10rem;
+}
+
+.experiencia-box{
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.imagen-experience{
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.bi-github{
+    font-size: 30px;
+}
+
+.experience-demo button{
+    font-size: 30px;
+}
+
+/* contacto */
+footer{
+    padding: 10rem;
+    margin: 0 auto;
+}
+
+.rodape-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rodape-item img{
+    width: 80px;
+}
+
+section.info-contacto{
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media screen and (max-width: 550px){
